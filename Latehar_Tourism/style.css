@@ -1,0 +1,285 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2fff2;
+}
+
+/* Header */
+.header {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+.header p {
+  color: yellow;
+  font-size: 1.2rem;
+}
+
+/* Navigation */
+.navbar {
+  text-align: center;
+  background-color: #e6ffe6;
+  padding: 15px 0;
+}
+.navbar a {
+  margin: 0 15px;
+  color: #004d00;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a.active {
+  color: #007700;
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  height: 4px;
+  background-color: green;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 77, 0, 0.1);
+  text-align: center;
+}
+.contact-section h2 {
+  color: #004d00;
+  margin-bottom: 10px;
+}
+.contact-section p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Form Styles */
+.contact-form {
+  text-align: left;
+  margin-top: 20px;
+}
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #004d00;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background-color: #006600;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 30px;
+  text-align: left;
+  color: #444;
+}
+.contact-info h3 {
+  color: #004d00;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: gray;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* About Section */
+.about-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 77, 0, 0.1);
+  color: #333;
+  line-height: 1.6;
+}
+.about-section h2,
+.about-section h3 {
+  color: #004d00;
+  margin-bottom: 15px;
+}
+.why-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.why-list li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+.why-list li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+/* Gallary*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2fff2;
+}
+
+/* Header */
+.header {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.header p {
+  color: yellow;
+  font-size: 1.2em;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ccffcc;
+  text-align: center;
+  padding: 10px 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #004d00;
+  margin: 0 15px;
+  font-weight: bold;
+}
+.navbar a.active {
+  color: #007700;
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  width: 80%;
+  height: 4px;
+  background-color: green;
+  border: none;
+  margin: 0 auto 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: gray;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* ============= Mobile Responsive Styles ============= */
+@media (max-width: 768px) {
+  /* GENERAL LAYOUT */
+  body {
+    padding: 0 10px;
+  }
+  .header,
+  .footer {
+    padding: 15px 5px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+
+  /* NAVBAR -->
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 90%;
+  }
+
+  /* CONTENT CONTAINERS */
+  .about-section,
+  .contact-container,
+  .gallery-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  /* FORMS */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* CARD AND ITEM LAYOUTS */
+  .highlights .card,
+  .gallery-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* GALLERY IMAGES */
+  .gallery-item img {
+    height: auto;
+  }
+
+  /* ABOUT PAGE LIST */
+  .why-list li {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media i {
+  margin-right: 8px;
+  color: #555;
+}
